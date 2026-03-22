@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 20px;
+}
+
+/* --- Header & Hero --- */
+header, .gacha {
+    background-color: #6366f1;
+    color: #ffffff;
+}
+
+header {
+    padding: 25px 0;
+}
+
+header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: #fbbf24;
+    letter-spacing: -0.5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #e0e7ff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #fbbf24;
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.4);
+}
+
+/* --- Hero Section (Gacha) --- */
+.gacha {
+    padding: 100px 0;
+}
+
+.gacha-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.gacha h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.gacha p {
+    font-size: 18px;
+    color: #e0e7ff;
+    margin-bottom: 25px;
+}
+
+.gacha-image {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px dashed #fbbf24;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #f43f5e;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(244, 63, 94, 0.4);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e11d48;
+    transform: scale(1.05);
+}
+
+.info {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f0fdf4;
+}
+
+.info h2 {
+    font-size: 36px;
+    margin-bottom: 70px;
+    color: #0f172a;
+}
+
+.grid {
+    display: flex;            
+    justify-content: center;
+    align-items: flex-start;  
+    gap: 50px;                
+    flex-wrap: wrap; 
+}
+
+.card {
+    width: 150px;             
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+}
+
+.box {
+    width: 150px;
+    height: 170px;
+    border: 5px solid #0d9488;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    background-color: white;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;           
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 30px;
+}
+
+.card:hover .box {
+    transform: rotate(3deg) scale(1.05);
+    border-color: #f59e0b;
+}
+
+.card p {
+    color: #475569;
+    font-size: 15px;
+    text-align: center;       
+}
+
+.quote {
+    background-color: #f5f3ff;
+    padding: 120px 0;
+}
+
+.quote .container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+}
+
+.quote-text {
+    font-size: 70px;
+    font-style: italic;
+    color: #4338ca;
+    font-weight: 300;
+    text-align: center;
+}
+
+.quote-author {
+    align-self: flex-end;
+    font-weight: 800;
+    font-size: 22px;
+    color: #1e293b;
+    margin-top: 15px;
+}
+
+.cta {
+    padding: 100px 0;
+}
+
+.cta-banner {
+    background-color: #0d9488;
+    padding: 60px 80px;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 10px 30px rgba(13, 148, 136, 0.3);
+}
+
+.cta-text h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 3px solid #fbbf24;
+    color: #fbbf24;
+    box-shadow: none;
+}
+
+.btn-outline:hover {
+    background-color: #fbbf24;
+    color: #0d9488;
+}
+
+footer {
+    padding: 40px;
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    font-weight: 600;
+}

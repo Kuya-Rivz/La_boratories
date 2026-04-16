@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator na Hindi Vault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" id="screen" readonly>
+                </div>
+
+                <div class="button-container">
+                    <div>
+                        <input type="button" value="AC"="clearDisplay()">
+                        <input type="button" value="/"="('/')">
+                        <input type="button" value="*"="('*')">
+                        <input type="button" value="DEL"="deleteLast()">
+                    </div>
+                    <div>
+                        <input type="button" value="7"="('7')">
+                        <input type="button" value="8"="('8')">
+                        <input type="button" value="9"="('9')">
+                        <input type="button" value="-"="('-')">
+                    </div>
+                    <div>
+                        <input type="button" value="4"="('4')">
+                        <input type="button" value="5"="('5')">
+                        <input type="button" value="6"="('6')">
+                        <input type="button" value="+"="('+')">
+                    </div>
+                    <div>
+                        <input type="button" value="1"="('1')">
+                        <input type="button" value="2"="('2')">
+                        <input type="button" value="3"="('3')">
+                        <input type="button" value="."="('.')">
+                    </div>
+                    <div>
+                        <input type="button" value="%"="('%')">
+                        <input type="button" value="0"="('0')">
+                        <input type="button" value="=" class="equals">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="user-guide">
+            <h3>User Guide: Calculator na Hindi Vault</h3>
+            <hr>
+            <ul>
+                <li><strong>AC:</strong> Clears the entire screen to start a new calculation.</li>
+                <li><strong>DEL:</strong> Removes the last character entered (Backspace).</li>
+                <li><strong>Operators:</strong> Use <code>+</code>, <code>-</code>, <code>*</code>, and <code>/</code>
+                    for basic arithmetic.</li>
+                <li><strong>Decimal:</strong> Use the <code>.</code> button for floating-point numbers.</li>
+                <li><strong>Equals:</strong> Press <code>=</code> to see the result of your expression.</li>
+            </ul>
+            <p class="note"><em>Note: This is a genuine calculator. No secret passwords or hidden photos here!</em></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

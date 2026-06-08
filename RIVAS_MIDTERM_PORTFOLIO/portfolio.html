@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDTERM E-Portfolio | DCIT 26</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#home">IT<span>Portfolio</span></a>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="dark-mode-toggle" class="theme-btn" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h5>Welcome to my Portfolio</h5>
+                <h1>Hi, I'm <span class="highlight">Jhon Joseph Rivas</span></h1>
+                <p>An aspiring Web Designer focused on building clean, and impactful designs.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Rivz.jpg" alt="Image ni rivz"> 
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Get to know my background, education, and skills</p>
+                <button id="toggle-about-btn" class="btn btn-sm btn-primary">Hide Details</button>
+            </div>
+            
+            <div id="about-dynamic-content" class="about-grid">
+                <div class="about-text">
+                    <h3>Personal Background</h3>
+                    <p>I am a passionate (kind of) Information Technology student dedicated to mastering my craft. I enjoy improving my UI/UX design, and a little bit of hacking.</p>
+                    
+                    <h3>Educational Background</h3>
+                    <ul class="edu-list">
+                        <li>
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>Bachelor of Science in Information Technology</strong>
+                                <p>Cavite State University | 2023 - Present</p>
+                            </div>
+                            <div>
+                                <strong>Senior Highschool ICT-CSS</strong>
+                                <p>Carolina National Highschool | 2018 - 2020</p>
+                            </div>
+                            <div>
+                                <strong>Secondary Studies</strong>
+                                <p>Sun Valley National Highschool | 2014 - 2018</p>
+                            </div>
+                            <div>
+                                <strong>Primary Studies</strong>
+                                <p>Sun Valley Elementary School | 2008 - 2014</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about-skills">
+                    <h3>Skills & Interests</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <h4>Frontend Dev</h4>
+                            <p>HTML5, CSS, JavaScript</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database skill-icon"></i>
+                            <h4>Database Management</h4>
+                            <p>MySQL, Php</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-code-branch skill-icon"></i>
+                            <h4>Version Control</h4>
+                            <p>Git & GitHub</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-laptop-code skill-icon"></i>
+                            <h4>UI/UX Design</h4>
+                            <p>Figma, Responsive Layouts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>A showcase of my recent midterms, laboratories, and personal development tasks</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fa-solid fa-address-card"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Midterm Portfolio</h3>
+                        <p class="project-desc-short">A simple portfolio to showcase what I learned.</p>
+                        <p class="project-desc-more hidden">This project includes a responsive design and interactive elements.</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Simple Calculator</h3>
+                        <p class="project-desc-short">A basic calculator application built with HTML, CSS, and JavaScript.</p>
+                        <p class="project-desc-more hidden">This project demonstrates fundamental programming concepts and user interface design principles.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-more-btn">View More</button>
+                        <button class="btn btn-sm btn-outline" onclick="window.open('https://kuya-rivz.github.io/La_boratories/LAB4/Calculator.html', '_blank')">View Project</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Simple Inventory Management System</h3>
+                        <p class="project-desc-short">An API-integrated dashboard utilizing asynchronous programming patterns...</p>
+                        <p class="project-desc-more hidden">Integrates Fetch API patterns to sync data hooks seamlessly with third-party meteorological networks. Displays interactive charting layers using lightweight modular styling paradigms.</p>
+                        <div class="project-tags">
+                            <span>React JS</span><span>Tailwind CSS</span><span>JavaScript</span>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-more-btn">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Resume</h2>
+                <p>A timeline breakdown of my foundational credentials and operational technical proficiencies</p>
+            </div>
+
+            <div class="resume-grid">
+                <div class="resume-col">
+                    <h3><i class="fas fa-book"></i> Education</h3>
+                    <div class="timeline-item">
+                        <div>
+                            <h4>BS Information Technology</h4>
+                            <h5>2023 - Present</h5>
+                            <p>Cavite State University</p>
+                            <p>Focusing core trajectories on web design frameworks, and UI/UX designing.</p>
+                        </div>
+                        <div>
+                            <h4>Senior Highschool ICT-CSS</h4>
+                            <h5>2018 - 2020</h5>
+                            <p>Carolina National Highschool</p>
+                            <p>Technical-Vocational course, that lines up to my interests and goals.</p>
+                        </div>
+                        <div>
+                            <h4>Secondary Studies</h4>
+                            <h5>2014 - 2018</h5>
+                            <p>Sun Valley National Highschool</p>
+                        </div>
+                        <div>
+                            <h4>Primary Studies</h4>
+                            <h5>2008 - 2014</h5>
+                            <p>Sun Valley Elementary School</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-col">
+                    <div class="resume-skills-section">
+                        <h3>Technical Proficiencies</h3>
+                        <div class="skills-bars-grid">
+                            <div class="bar-container">
+                                <span class="bar-label">HTML/CSS</span>
+                                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="bar-container">
+                                <span class="bar-label">JavaScript (DOM Manipulation)</span>
+                                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="bar-container">
+                                <span class="bar-label">Database Queries (SQL)</span>
+                                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="bar-container">
+                                <span class="bar-label">Git/Version Control</span>
+                                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-section">
+                        <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                        <div class="timeline-item">
+                            <h4>Freelance Web Developer / Academic Collaborator</h4>
+                            <h5>2024 - Present</h5>
+                            <p>Unemployed / School Projects</p>
+                            <p>No professional experience but I aim to be a successful web developer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-download">
+                <a href="MyCV.pdf" target="_blank" class="btn btn-outline">View CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Information</h2>
+                <p>Let's collaborate on code! Reach out using any platform below.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-cards">
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Me</h4>
+                            <p>tc.jhonjoseph.rivas@cvsu.edu.ph</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Me</h4>
+                            <p>+63 945 247 4586</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h4>Follow My Progress</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/Kuya-Rivz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/jj.rivas13" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-form" novalidate>
+                        <div id="form-feedback" class="form-feedback hidden"></div>
+
+                        <div class="form-group">
+                            <label for="form-name">Full Name *</label>
+                            <input type="text" id="form-name" placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email">Email Address *</label>
+                            <input type="email" id="form-email" placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Your Message *</label>
+                            <textarea id="form-message" rows="5" placeholder="Type your project message here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BSIT Portfolio. Developed for DCIT 26 Laboratory Project. All Rights Reserved.</p>
+    </footer>
+
+    <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
